@@ -1,5 +1,6 @@
 package com.smiledwatermelon.whatzapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -53,6 +54,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void registerNewUser(View view) {
+        Intent intent=new Intent(this,RegisterActivity.class);
+        finish();
+        startActivity(intent);
 
 
     }
